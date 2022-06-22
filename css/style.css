@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+._container{
+    max-width: 990px;
+    margin: 0 auto;
+    border-bottom: 1px solid #dcdcde;
+}
+._container:last-child{
+    margin-bottom: 1px solid transparent;
+}
