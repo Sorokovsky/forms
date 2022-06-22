@@ -1,12 +1,82 @@
-*{
+body, *{
     margin: 0;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
+    font-size: 14px;
+    outline: none;
 }
+
 ._container{
-    max-width: 990px;
+    padding: 50px 10px;
+    max-width: 1010px;
     margin: 0 auto;
-    border-bottom: 1px solid #dcdcde;
+    border-top: 1px solid #dcdcde;
 }
-._container:last-child{
-    margin-bottom: 1px solid transparent;
+textarea{
+    resize: vertical;
+}
+.title{
+    font-size: 30px;
+    font-family: "Roboto Slab", sans-serif;
+    color: rgb(31, 34, 44);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 21px;
+}
+.name{
+    margin-bottom: 29px;
+    font-size: 20px;
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2; 
+}
+.forms__input{
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid #cccccc;
+    transition: .3s all linear;
+}
+.forms__input:focus-visible, .forms__input:hover{
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(62, 106, 255);
+        border-radius: 3px;
+        box-shadow: 0px 0px 5px 0px rgba(62, 106, 255, 0.55);
+}
+select:focus-visible, select:hover{
+    border: 1px solid #cccccc!important;
+    box-shadow: unset !important;
+}
+.forms__input{
+    padding: 10.5px 16px;
+    margin-bottom: 10px;
+}
+.forms__static{
+    max-width: 330px;
+    width: 100%;
+}
+.btn{
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 100%;
+    padding: 13.2px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    border: unset !important;
+}
+.forms__btn{
+    transition: .3s all linear;
+    background-color: rgb(18, 214, 97);
+    color: rgb(255, 255, 255);
+}
+.forms__btn:hover{
+    background-color: #07be51;
 }

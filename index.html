@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Тема "Форми". Різноанітні варіанти зюастосування форм н сайті</title>
 </head>
 <body>
-    <div class="_container">
-        
+    <h1 class="title">Форми</h1>
+    <div class="forms _container">
+        <form class="forms__static">
+            <h3 class="name forms__name">01. проста форма</h3>
+            <input type="text" class="forms__input" name="name" placeholder="Введіть ім’я">
+            <input type="text" class="forms__input" name="email" placeholder="Email">
+            <select class="forms__input select" name="city" placeholder="Email">
+                <option class="forms__input" disabled selected value="Ваше місто">Ваше місто</option>
+                <option class="forms__input" value="Київ">Київ</option>
+                <option class="forms__input" value="Львів">Львів</option>
+                <option class="forms__input" value="Хмельницький">Хмельницький</option> 
+            </select>
+            <textarea name="E"class="forms__input">Email</textarea>
+            <button type="submit" class="btn forms__btn">Зареєструватися</button>
+        </form>
     </div>
     <div class="_container"></div>
 </body>
