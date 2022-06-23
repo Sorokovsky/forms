@@ -227,4 +227,43 @@ label.radio__label:after{
     display: flex;
     justify-content: space-between;
     max-width: 418px;
+    width: 100%;
+    align-items: flex-start;
+}
+.items__block{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.items__right{
+    max-width: 476px;
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 3px;
+    background-color: rgb(247, 247, 247);  
+    padding: 0 20px; 
+    padding-bottom: 21px;
+}
+.items__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.items__values{
+    max-width: 355px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 18px;
+    justify-content: space-between;
+}
+.items__name{
+    font-family: "Roboto", sans-serif;
+    color: rgb(179, 179, 179);
+    font-weight: bold;
+    line-height: 1.2;
+}
+.nopt{
+    padding-top: 0;
 }
