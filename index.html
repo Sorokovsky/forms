@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Тема "Форми". Різноанітні варіанти зюастосування форм н сайті</title>
 </head>
@@ -26,7 +26,21 @@
             <textarea name="E"class="forms__input">Email</textarea>
             <button type="submit" class="btn forms__btn">Зареєструватися</button>
         </form>
+        <form class="forms__fixed">
+            <h3 class="name forms__name">06. фіксована форма</h3>
+            <div class="forms__content">
+                <a href="#" class="forms__close">+</a>
+                <label for="name">Логін</label>
+                <input type="text" id="name" class="forms__input fixed__input" name="name">
+                <label for="password">Пароль</label>
+                <input type="text" id="password" class="forms__input fixed__input" name="password">
+                <a href="#" class="forgot">Забули пароль?</a>
+                <input type="checkbox" id="access" name="access" class="checkbox"><label class="fixed__checkbox checkbox__label" for="access">Запам’ятати пароль</label>
+            <button type="submit" class="btn forms__btn">Увійти</button>
+            </div>
+        </form>
     </div>
     <div class="_container"></div>
+    <script src="script.js"></script>
 </body>
 </html>
