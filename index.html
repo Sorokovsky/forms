@@ -40,7 +40,26 @@
             </div>
         </form>
     </div>
-    <div class="_container"></div>
+    <div class="items _container">
+        <h3 class="name items__name">02. елементи</h3>
+        <div class="items__block">
+            <div class="items__left">
+                <div class="items__radio">
+                    <input type="radio" id="new" class="checkbox" name="dest" value="Нова Пошта"><label for="new" class="checkbox__label items__label radio__label">Нова Пошта</label>
+                    <input type="radio" id="person" name="dest" class="checkbox" value="Кур’єр"><label for="person" class="checkbox__label items__label radio__label">Кур’єр</label>
+                    <input type="radio" id="self" name="dest" class="checkbox" disabled value="Самовивіз"><label for="self" class="checkbox__label items__label radio__label">Самовивіз</label>
+                </div>
+                <div class="items__checks">
+                    <input type="checkbox" id="read" class="checkbox" name="rules" value="Прочитав умови договору"><label for="read" class="checkbox__label items__label">Прочитав умови договору</label>
+                    <input type="checkbox" id="ok" class="checkbox" name="rules" value="Згідний з ПДВ 9%"><label for="ok" class="checkbox__label items__label">Згідний з ПДВ 9%</label>
+                    <input type="checkbox" id="onEmail" class="checkbox" name="rules" disabled value="Отримувати новини на ел. пошту"><label for="onEmail" class="checkbox__label items__label">Отримувати новини на ел. пошту</label>
+                </div>
+            </div>
+            <div class="items__right">
+                
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
