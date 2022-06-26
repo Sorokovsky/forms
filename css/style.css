@@ -10,6 +10,7 @@ body, *{
     padding: 50px 10px;
     max-width: 1010px;
     position: relative;
+    z-index: 1;
     margin: 0 auto;
     border-bottom: 1px solid #dcdcde;
 }
@@ -96,6 +97,7 @@ select:focus-visible, select:hover{
     position: fixed;
     top: 174px;
     right: 24% ;
+    z-index: 102;
     transition: .3s all linear;
 }
 ._hide{
@@ -104,7 +106,6 @@ select:focus-visible, select:hover{
 }
 .forms__content{
     position: relative;
-    z-index: 10000;
     padding: 16.8px 26px;
     width: 310px;
         border: 1px solid rgb(230, 230, 230);
@@ -259,6 +260,9 @@ label.radio__label:after{
     padding-top: 18px;
     justify-content: space-between;
 }
+.items{
+    z-index: 0;
+}
 .items__name{
     font-family: "Roboto", sans-serif;
     color: rgb(179, 179, 179);
@@ -320,4 +324,58 @@ label.radio__label:after{
 }
 .checkboxs__person input:checked + label{
     color: #3e6aff;
+}
+.checkboxs__block{
+    display: flex;
+    align-items: center;
+    max-width: 670px;
+    justify-content: space-between;
+}
+.checkboxs__primary{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.checkboxs__item label{
+    margin-left: 71px;
+    padding-top: 3px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: rgb(31, 34, 44);  
+}
+.checkboxs__item label::before{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 12.5px;
+    top: 0;
+    left: -71px;
+    background-color: rgb(207, 207, 209);
+    width: 45px;
+    height: 25px;
+    border: 1px solid transparent;
+    transition: .3s all linear;
+}
+.checkboxs__item label::after{
+    content: '';
+    display: block;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: -69px;
+    top: 3px;
+    width: 21px;
+    height: 21px; 
+    transition: .3s all linear;
+}
+.checkboxs__item input:hover + label::before{
+    background-color: #3e6aff;
+}
+.checkboxs__item input:checked + label::before{
+    background-color: #3e6aff;
+}
+.checkboxs__item input:checked + label::after{
+    left: -48px;
 }
