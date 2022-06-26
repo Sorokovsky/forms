@@ -267,3 +267,38 @@ label.radio__label:after{
 .nopt{
     padding-top: 0;
 }
+.checkboxs__person{
+    display: flex;
+}
+.checkboxs__style{
+    position: relative;
+    min-height:70px;
+    padding-left: 85px;
+    margin-left: 15px;
+    padding-top: 25px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(31, 34, 44);
+    font-weight: bold;
+}
+.checkboxs__styles{
+    display: flex;
+    flex-direction: column;
+    gap:17px;
+}
+.checkboxs__style::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: -15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.man:before{
+    background-image: url('../img/man.png');
+}
+.girl:before{
+    background-image: url('../img/girl.png');
+}
