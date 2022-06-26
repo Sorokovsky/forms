@@ -104,6 +104,7 @@ select:focus-visible, select:hover{
 }
 .forms__content{
     position: relative;
+    z-index: 10000;
     padding: 16.8px 26px;
     width: 310px;
         border: 1px solid rgb(230, 230, 230);
@@ -280,16 +281,25 @@ label.radio__label:after{
     font-family: "Roboto", sans-serif;
     color: rgb(31, 34, 44);
     font-weight: bold;
+    transition: .3s all linear;
+}
+.checkboxs__style:hover{
+    color: #3e6aff;
 }
 .checkboxs__styles{
     display: flex;
     flex-direction: column;
     gap:17px;
 }
+.checkboxs__person input:hover + label:before {
+    border: 1px solid #254ed7;
+}
 .checkboxs__style::before{
     content: '';
     position: absolute;
     display: inline-block;
+    transition: .3s all linear;
+    border: 1px solid transparent;
     top: 0;
     left: -15px;
     width: 70px;
@@ -301,4 +311,13 @@ label.radio__label:after{
 }
 .girl:before{
     background-image: url('../img/girl.png');
+}
+.checkboxs__person input:checked + .man::before{
+    background-image: url('../img/manHover.png');
+}
+.checkboxs__person input:checked + .girl::before{
+    background-image: url('../img/girlHover.png');
+}
+.checkboxs__person input:checked + label{
+    color: #3e6aff;
 }
