@@ -133,11 +133,41 @@
                             </td>
                             <td>
                                 <select class="forms__input fs select" name="city" placeholder="Email">
-                                    <option class="forms__input" disabled selected value="Ваше місто">Ваше місто</option>
                                     <option class="forms__input" value="Київ">Київ</option>
                                     <option class="forms__input" value="Львів">Львів</option>
-                                    <option class="forms__input" value="Хмельницький">Хмельницький</option> 
+                                    <option class="forms__input" selected value="Хмельницький">Хмельницький</option> 
                                 </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p>Стать:</p></td>
+                            <td><div class="form__checks">
+                                <div>
+                                    <input type="radio" class="checkbox" name="person" id="manc" value="man">
+                                    <label for="manc" class="checkbox__label items__label radio__label">Чоловік</label>
+                                </div>
+                                <div>
+                                    <input type="radio" class="checkbox" name="person" id="woman" value="woman">
+                                    <label for="woman" class="checkbox__label items__label radio__label">Жінка</label>
+                                </div>
+                            </div></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p>Фото:</p>
+                            </td>
+                            <td>
+                                <input type="file" class="checkbox">
+                                <a href="#" class="blue__btn m">Виберіть файл</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="top">
+                                <p class="">Коментарій:</p>
+                            </td>
+                            <td>
+                                <textarea name="text"class="forms__input t" placeholder="Введіть текст повідомлення"></textarea>
+                                <button type="submit" class="btn forms__btn">Зареєструватися</button>
                             </td>
                         </tr>
                     </table>

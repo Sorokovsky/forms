@@ -414,3 +414,34 @@ p{
 .fs{
     margin-top: 15px;
 }
+.form__checks{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.form__checks div{
+    display: flex;
+    padding-top: 13px;
+}
+.blue__btn{
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: rgb(62, 106, 255);
+    text-decoration: none;
+    padding: 12px 37px;
+    transition: .3s all ease;
+}
+.m{
+    margin-bottom: 13px;
+}
+.t{
+    min-height:130px;
+}
+.top{
+    padding-top: 16px;
+    vertical-align: top;
+}
