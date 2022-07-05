@@ -477,6 +477,9 @@ textarea{
     padding-bottom: 0;
     border-bottom: 1px solid transparent;
 }
+.form2__table tr.nobb + tr{
+    padding-top: 0;
+}
 .form2__table input, .form2__table select{
     min-width: 220px;
     width: 100%;
@@ -539,4 +542,7 @@ label.f2m{
 }
 td.co{
     width: 40%;
+}
+.pt27{
+    margin-top: 20px;
 }
