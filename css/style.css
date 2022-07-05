@@ -562,4 +562,10 @@ td.co{
 }
 .date{
     padding: 0 15px;
+    appearance: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(204, 204, 204);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
 }
