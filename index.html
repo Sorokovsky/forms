@@ -17,7 +17,7 @@
             <form class="forms__static">
                 <h2 class="name forms__name">01. проста форма</h2>
                 <input type="text" class="forms__input" name="name" placeholder="Введіть ім’я">
-                <input type="text" class="forms__input" name="email" placeholder="Email">
+                <input type="email" class="forms__input" name="email" placeholder="Email">
                 <select class="forms__input select" name="city" placeholder="Email">
                     <option class="forms__input" disabled selected value="Ваше місто">Ваше місто</option>
                     <option class="forms__input" value="Київ">Київ</option>
@@ -34,7 +34,7 @@
                     <label for="name">Логін</label>
                     <input type="text" id="name" class="forms__input fixed__input" name="name">
                     <label for="password">Пароль</label>
-                    <input type="text" id="password" class="forms__input fixed__input" name="password">
+                    <input type="password" id="password" class="forms__input fixed__input" name="password">
                     <a href="#" class="forgot">Забули пароль?</a>
                     <input type="checkbox" id="access" name="access" class="checkbox"><label class="fixed__checkbox checkbox__label" for="access">Запам’ятати пароль</label>
                 <button type="submit" class="btn forms__btn">Увійти</button>
@@ -114,26 +114,26 @@
                         <table>
                             <tr>
                                 <td>
-                                    <p>ФІО:</p>
+                                    <label class="l" for="n">ФІО:</label>
                                 </td>
                                 <td>
-                                    <input type="text" class="forms__input fi" name="name" placeholder="Введіть ім’я">
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <p>Пароль:</p>
-                                </td>
-                                <td>
-                                    <input type="password" class="forms__input fi" name="password" placeholder="Введіть не менше 6 символів">
+                                    <input id="n" type="text" class="forms__input fi" name="name" placeholder="Введіть ім’я">
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Місто:</p>
+                                    <label class="l" for="p">Пароль:</label>
                                 </td>
                                 <td>
-                                    <select class="forms__input fs select" name="city" placeholder="Email">
+                                    <input id="p" type="password" class="forms__input fi" name="password" placeholder="Введіть не менше 6 символів">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="l" for="c">Місто:</label>
+                                </td>
+                                <td>
+                                    <select id="c" class="forms__input fs select" name="city" placeholder="Email">
                                         <option class="forms__input" value="Київ">Київ</option>
                                         <option class="forms__input" value="Львів">Львів</option>
                                         <option class="forms__input" selected value="Хмельницький">Хмельницький</option>
@@ -141,7 +141,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><p>Стать:</p></td>
+                                <td><label class="l">Стать:</label></td>
                                 <td><div class="form__checks">
                                     <div>
                                         <input type="radio" class="checkbox" name="person" id="manc" value="man">
@@ -155,16 +155,16 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <p>Фото:</p>
+                                    <label class="l" for="f">Фото:</label>
                                 </td>
                                 <td>
-                                    <input type="file" class="checkbox">
+                                    <input id="f" type="file" class="checkbox">
                                     <a href="#" class="blue__btn m">Виберіть файл</a>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="top">
-                                    <p class="">Коментарій:</p>
+                                    <p class="">Коментарій:</label>
                                 </td>
                                 <td>
                                     <textarea name="text"class="forms__input t" placeholder="Введіть текст повідомлення"></textarea>

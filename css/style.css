@@ -407,20 +407,19 @@ table{
     border-collapse: collapse;
 }
 .fi{
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    display: block;;
 }
-p{
+.l{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     color: rgb(31, 34, 44);
 }
 .fs{
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 0;
 }
 .form__checks{
-    margin: 20px 0;
+    margin: 0px 0;
     display: flex;
     align-items: center;
     gap: 24px;
