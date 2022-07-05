@@ -517,6 +517,7 @@ a.grey_btn{
 }
 .grey_btn:hover{
     box-shadow: unset;
+    color: #fff;
     border-radius: 3px;
     background-color: rgb(133, 134, 141);
 }
