@@ -18,12 +18,14 @@
                 <h2 class="name forms__name">01. проста форма</h2>
                 <input type="text" class="forms__input" name="name" placeholder="Введіть ім’я">
                 <input type="email" class="forms__input" name="email" placeholder="Email">
-                <select class="forms__input select" name="city" placeholder="Email">
-                    <option class="forms__input" disabled selected value="Ваше місто">Ваше місто</option>
-                    <option class="forms__input" value="Київ">Київ</option>
-                    <option class="forms__input" value="Львів">Львів</option>
-                    <option class="forms__input" value="Хмельницький">Хмельницький</option>
-                </select>
+                <div class="sel">
+                    <select class="forms__input select" name="city" placeholder="Email">
+                        <option class="forms__input" disabled selected value="Ваше місто">Ваше місто</option>
+                        <option class="forms__input" value="Київ">Київ</option>
+                        <option class="forms__input" value="Львів">Львів</option>
+                        <option class="forms__input" value="Хмельницький">Хмельницький</option>
+                    </select>
+                </div>
                 <textarea name="E"class="forms__input">Email</textarea>
                 <button type="submit" class="btn forms__btn">Зареєструватися</button>
             </form>
@@ -71,7 +73,7 @@
                     <div class="items__row">
                         <div class="items__name">Дата</div>
                         <div class="items__values nopt">
-                             <input type="date" value="2018-03-17">
+                             <input type="date" class="date" value="2018-03-17">
                         </div>
                     </div>
                 </div>
@@ -133,11 +135,13 @@
                                     <label class="l" for="c">Місто:</label>
                                 </td>
                                 <td>
-                                    <select id="c" class="forms__input fs select" name="city" placeholder="Email">
-                                        <option class="forms__input" value="Київ">Київ</option>
-                                        <option class="forms__input" value="Львів">Львів</option>
-                                        <option class="forms__input" selected value="Хмельницький">Хмельницький</option>
-                                    </select>
+                                    <div class="sel">
+                                        <select id="c" class="forms__input fs select" name="city" placeholder="Email">
+                                            <option class="forms__input" value="Київ">Київ</option>
+                                            <option class="forms__input" value="Львів">Львів</option>
+                                            <option class="forms__input" selected value="Хмельницький">Хмельницький</option>
+                                        </select>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
@@ -197,11 +201,13 @@
                     <tr class="nobb">
                         <td class="co">
                             <label for="country" class="form2__label f2">Країна</label>
-                            <select id="country" class="forms__input select" name="country" placeholder="">
-                                <option class="forms__input" selected value="Індонезія">Індонезія</option>
-                                <option class="forms__input" value="Італія">Італія</option>
-                                <option class="forms__input" value="Китай">Китай</option>
-                            </select>
+                            <div class="sel">
+                                <select id="country" class="forms__input select" name="country" placeholder="">
+                                    <option class="forms__input" selected value="Індонезія">Індонезія</option>
+                                    <option class="forms__input" value="Італія">Італія</option>
+                                    <option class="forms__input" value="Китай">Китай</option>
+                                </select>
+                            </div>
                         </td>
                         <td >
                             <label for="address2" class="form2__label">Адреса</label>

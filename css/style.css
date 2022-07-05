@@ -64,9 +64,25 @@ option{
         border-radius: 3px;
         box-shadow: 0px 0px 5px 0px rgba(62, 106, 255, 0.55);
 }
-select{
+.sel select{
     padding-right: 15px;
     cursor: pointer;
+    appearance: none;
+}
+.sel{
+    position: relative;
+}
+.sel::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    transform:translateY(60%);
+    right: 14px;
+    width: 9px;
+    height: 5px;
+    background-image: url('../img/arr.png'); 
+    background-repeat: no-repeat;   
 }
 select:focus-visible, select:hover{
     border: 1px solid #cccccc!important;
@@ -493,18 +509,17 @@ textarea{
 input{
     height: 41px;
 }
-.f2{
+.co{
     position: relative;
 }
 label.f2m{
     margin-bottom: 0;
 }
-.f2::before{
+.co::after{
     display: block;
-    position: absolute;
+    position: absolute !important;
     content: " ";
     background-color: #cccccc;
-    position: absolute;
     width: 1px;
     height: 19px;
     top: 34px;
@@ -544,4 +559,7 @@ td.co{
 }
 .pt27{
     margin-top: 20px;
+}
+.date{
+    padding: 0 15px;
 }
