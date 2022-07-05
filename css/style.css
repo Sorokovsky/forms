@@ -5,9 +5,11 @@ body, *{
     font-size: 14px;
     outline: none;
 }
-
+body{
+    padding: 0 10px;
+}
 ._container{
-    padding: 50px 10px;
+    padding: 50px 0px;
     max-width: 1010px;
     position: relative;
     z-index: 1;
@@ -400,6 +402,7 @@ label.radio__label:after{
 }
 table{
     width: 100%;
+    border-collapse: collapse;
 }
 .fi{
     display: block;
@@ -435,6 +438,10 @@ p{
     padding: 12px 37px;
     transition: .3s all ease;
 }
+.blue__btn:hover{
+    background-color: rgb(40, 87, 244);
+    box-shadow: 0px 2px 5px 0px rgba(15, 40, 126, 0.35);
+}
 .m{
     margin-bottom: 13px;
 }
@@ -444,4 +451,82 @@ p{
 .top{
     padding-top: 16px;
     vertical-align: top;
+}
+.form2__table{
+    max-width: 686px;
+}
+.form2__label{
+    display: block;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(179, 179, 179);
+    margin-bottom: 7px;
+}
+.form2__table tr{
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form2__table tr:not(:last-child){
+    border-bottom: 1px solid #eeeeee;
+}
+.form2__table input, .form2__table select{
+    min-width: 220px;
+    width: 100%;
+}
+.form2__table tr:not(:first-child){
+    padding-top: 30px;
+}
+.form2__table td{
+    max-width: 100%;
+    width: 100%;
+}
+input{
+    height: 41px;
+}
+.f2{
+    position: relative;
+}
+label.f2m{
+    margin-bottom: 0;
+}
+.f2::before{
+    display: block;
+    position: absolute;
+    content: " ";
+    background-color: #cccccc;
+    position: absolute;
+    width: 1px;
+    height: 19px;
+    top: 34px;
+    right: 30px;
+}
+a.grey_btn{
+    display: inline-block;
+    border: 1px solid rgb(133, 134, 141);
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 3px;
+    color: rgb(110, 111, 119);
+    font-weight: bold;
+    transition: .3s all linear;
+      
+}
+.grey_btn:hover{
+    box-shadow: unset;
+    border-radius: 3px;
+    background-color: rgb(133, 134, 141);
+}
+.a{
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    padding: 13px 26px;
+    line-height: 1;
+}
+.r{
+    text-align: right;
 }
