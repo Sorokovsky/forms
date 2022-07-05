@@ -406,6 +406,9 @@ table{
     width: 100%;
     border-collapse: collapse;
 }
+button{
+    cursor: pointer;
+}
 .fi{
     display: block;;
 }
