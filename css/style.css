@@ -473,6 +473,10 @@ textarea{
 .form2__table tr:not(:last-child){
     border-bottom: 1px solid #eeeeee;
 }
+.form2__table tr.nobb{
+    padding-bottom: 0;
+    border-bottom: 1px solid transparent;
+}
 .form2__table input, .form2__table select{
     min-width: 220px;
     width: 100%;
@@ -532,4 +536,7 @@ label.f2m{
 }
 .r{
     text-align: right;
+}
+td.co{
+    width: 40%;
 }
