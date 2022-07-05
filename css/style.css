@@ -306,9 +306,6 @@ label.radio__label:after{
     flex-direction: column;
     gap:17px;
 }
-.checkboxs__person input:hover + label:before {
-    border: 1px solid #3E6AFF;
-}
 .checkboxs__style::before{
     content: '';
     position: absolute;
