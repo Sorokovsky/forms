@@ -74,6 +74,7 @@ option{
 }
 .sel::before{
     content: "";
+    pointer-events: none;
     display: block;
     position: absolute;
     bottom: 50%;
