@@ -246,10 +246,10 @@ label.radio__label::before{
 label.radio__label:after{
     border: unset;
     border-radius: 50%;
-    width: 7px;
-    height: 7px;
-    top: 5px;
-    left: 5.5px;
+    width: 7.5px;
+    height: 7.5px;
+    top: 5.5px;
+    left: 5px;
     background-color: #254ed7;
 }
 .items__left{
