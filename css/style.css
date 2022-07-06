@@ -499,6 +499,9 @@ textarea{
     padding-bottom: 0;
     border-bottom: 1px solid transparent;
 }
+.nobd{
+    border-bottom: 1px solid transparent;
+}
 .form2__table tr.nobb + tr{
     padding-top: 0;
 }
