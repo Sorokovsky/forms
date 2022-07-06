@@ -516,7 +516,7 @@ textarea{
     max-width: 100%;
     width: 100%;
 }
-input{
+input, select{
     height: 41px;
 }
 .co{
