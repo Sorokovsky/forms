@@ -470,6 +470,9 @@ textarea{
     padding-top: 16px;
     vertical-align: top;
 }
+.top label{
+    font-weight: 700;
+}
 .form2__table{
     max-width: 686px;
 }
