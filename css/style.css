@@ -476,6 +476,9 @@ textarea{
 .form2__table{
     max-width: 686px;
 }
+#address2{
+    padding-bottom: 0;
+}
 .form2__label{
     display: block;
     font-size: 13px;
