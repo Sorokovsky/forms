@@ -477,7 +477,7 @@ textarea{
     max-width: 686px;
 }
 #address2{
-    padding-bottom: 0;
+    padding-bottom: 16px;
 }
 .form2__label{
     display: block;
